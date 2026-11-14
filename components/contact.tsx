@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import { Check, Copy, Send } from 'lucide-react'
+import { ArrowUpRight, Check, Copy, MessageCircle, Phone, Send } from 'lucide-react'
 import { profile } from '@/lib/portfolio-data'
 import { SectionHeading } from './section-heading'
 
@@ -44,6 +44,42 @@ export function Contact() {
               <span aria-live="polite">{copied ? 'Copied' : 'Copy'}</span>
             </button>
           </div>
+
+          <ul className="mt-8 flex flex-col gap-3">
+            <li>
+              <a
+                href={`https://wa.me/${profile.whatsapp.international}?text=${encodeURIComponent('Hello Ian, I saw your portfolio.')}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex items-center gap-4 rounded-2xl border bg-card p-4 transition-colors hover:border-primary"
+              >
+                <span className="flex size-11 shrink-0 items-center justify-center rounded-full bg-primary/10 text-primary">
+                  <MessageCircle className="size-5" aria-hidden="true" />
+                </span>
+                <span className="flex flex-col">
+                  <span className="font-mono text-xs uppercase tracking-widest text-muted-foreground">WhatsApp</span>
+                  <span className="text-lg font-medium">{profile.whatsapp.display}</span>
+                </span>
+                <ArrowUpRight className="ml-auto size-5 text-muted-foreground transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-primary" aria-hidden="true" />
+                <span className="sr-only">(opens WhatsApp in a new tab)</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href={`tel:${profile.phone.international}`}
+                className="group flex items-center gap-4 rounded-2xl border bg-card p-4 transition-colors hover:border-primary"
+              >
+                <span className="flex size-11 shrink-0 items-center justify-center rounded-full bg-primary/10 text-primary">
+                  <Phone className="size-5" aria-hidden="true" />
+                </span>
+                <span className="flex flex-col">
+                  <span className="font-mono text-xs uppercase tracking-widest text-muted-foreground">Call</span>
+                  <span className="text-lg font-medium">{profile.phone.display}</span>
+                </span>
+                <ArrowUpRight className="ml-auto size-5 text-muted-foreground transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-primary" aria-hidden="true" />
+              </a>
+            </li>
+          </ul>
         </div>
 
         <form onSubmit={handleSubmit} className="flex flex-col gap-4 rounded-2xl border bg-card p-6">

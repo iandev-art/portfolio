@@ -1,6 +1,8 @@
 export const profile = {
   name: 'Ian Njoroge',
   email: 'iannjoroge706@gmail.com',
+  whatsapp: { display: '0701 502 191', international: '254701502191' },
+  phone: { display: '0728 225 417', international: '+254728225417' },
   location: 'Nairobi, Kenya',
   roles: ['Mathematics & CS student', 'Data Science learner', 'Prompt engineer', 'Virtual Assistant'],
 }
