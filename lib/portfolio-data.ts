@@ -112,7 +112,8 @@ export const projects: Project[] = [
 
 export const skillGroups = [
   { name: 'Mathematics', items: ['Linear Algebra', 'Calculus', 'Probability', 'Statistics', 'Discrete Math'] },
-  { name: 'Data & Code', items: ['Python', 'SQL', 'Data Analysis', 'Visualisation', 'Spreadsheets'] },
+  { name: 'Data & Code', items: ['Python', 'SQL', 'Data Analysis', 'Visualisation', 'Microsoft Excel', 'Google Sheets'] },
   { name: 'AI', items: ['Prompt Engineering', 'ChatGPT', 'Generative AI', 'Vibe Coding', 'AI Research'] },
   { name: 'Professional', items: ['Communication', 'Client Management', 'Workflow Automation', 'Canva', 'Google Workspace'] },
+  { name: 'Interests', items: ['Network Engineering', 'Data Science', 'Applied AI'] },
 ]

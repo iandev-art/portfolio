@@ -19,6 +19,9 @@ export function About() {
               {"I'm studying the theory behind computation at Multimedia University — and applying it at ALX, where I'm learning to clean, analyse and model real-world data."}
             </p>
             <p>
+              {"I'm comfortable working in Microsoft Excel and Google Sheets, and I have a growing interest in network engineering: how systems connect and how data moves between them."}
+            </p>
+            <p>
               {"I treat AI as a power tool: I've been trained in prompt engineering and use AI to research, prototype and vibe-code projects that would otherwise take weeks."}
             </p>
             <p>
